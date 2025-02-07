@@ -1,7 +1,42 @@
-* {
-    box-sizing: border-box;
+/* * {
     margin: 0;
     padding: 0;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+    margin: 0;
+}
+
+ol[role="list"],
+ul[role="list"] {
+    list-style: none;
+    padding-inline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
+html {
+    font-family: "Roboto", serif;
 }
 
 .promo {
@@ -49,10 +84,10 @@
     text-transform: uppercase;
     cursor: pointer;
     text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+    border: none;
 }
 
 .logo__img {
-    display: block;
     margin: 0 auto;
 }
 
@@ -104,7 +139,6 @@
 }
 
 .promo__more-img {
-    display: block;
     margin: 10px auto 0 auto;
 }
 
@@ -178,7 +212,7 @@
     margin-top: 19px;
     color: rgb(255, 255, 255);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 300;
     text-align: right;
     padding-left: 390px;
     z-index: 2;
@@ -189,6 +223,9 @@
 }
 
 .info__img {
+    width: 615px;
+    height: 350px;
+    object-fit: contain;
     position: absolute;
     top: 93px;
     left: -83px;
@@ -198,6 +235,10 @@
 .skills {
     background: url(../img/secondary_bg.jpg) center center/ cover no-repeat;
     padding: 80px 0 102px 0;
+}
+
+.skills__img {
+    min-width: 60px;
 }
 
 .skills__wrapper {
@@ -241,7 +282,6 @@
 }
 
 .present__img {
-    display: block;
     margin: 0 auto;
 }
 
@@ -262,7 +302,9 @@
 }
 
 .radio__img {
-    display: block;
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
     margin: 0 auto;
 }
 
